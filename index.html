@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tableau Mondrian</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="all___block">
+
+
+    <!-- Début du logo|titre -->
+    <header>
+      <div>
+        <h1> <span><</span>
+      <span>I</span>
+      <span>N</span>
+      <span>T</span>
+      <span>O</span>
+      <span>C</span>
+      <span>O</span>
+      <span>D</span>
+      <span>E</span>
+      <span>></span>
+    </h1>
+      </div>
+      <!-- Fin du logo|titre -->
+
+      <!-- menu -->
+      <nav id="header__menu">
+        <ul>
+          <li><a class="header__menu--one" href="#"> <span><</span>
+          <span>HTML</span>
+        <span>></span> </a></li>
+
+          <li><a class="header__menu--deux" href="#"> <span><</span>
+        <span>CSS</span>
+      <span>></span> </a></li>
+        </ul>
+      </nav>
+      <!-- menu__fin -->
+    </header>
+
+
+    <div class="block__sommaire_and_dody">
+      <!-- Sommaire -->
+      <div class="block__sommaire">
+        <h2> Sommaire </h2>
+        <nav>
+            <ul>Introduction</ul>
+
+            <ul>Structure de base</ul>
+
+            <ul>Balise structurante</ul>
+
+            <ul>Création de fichier HTML</ul>
+
+            <ul>BEM</ul>
+
+        </nav>
+      </div>
+      <!-- Sommaire -->
+
+
+      <div class="block__body">
+
+
+        <!-- Début de la Structure de base -->
+        <article class="article__structure_base">
+
+          <!-- section d'introductionde la Structure de base -->
+          <section>
+            <h3 class="titre__html"> Structure base HTML </h3>
+            <p>Le document HTML commence toujours par ce que nous appelons la structure de base. Cette structure est obligatoire et constant.</p>
+            <p> ex.:
+              <p/>
+              <div class="article__code">
+                <h5 class="titre__html">HTML</h5>
+                <code class="article__code--base">
+                <<span>!DOCTYPE html></span><br><br>
+                  &nbsp; <<span>html></span><br>
+                   &nbsp;  &nbsp;<<span>head></span><br>
+                   &nbsp;  &nbsp;  &nbsp;<<span>title>Titre<</span>/title><br>
+                   &nbsp;  &nbsp;  &nbsp;<<span>meta charset="utf-8"></span><br>
+                  &nbsp;  &nbsp; <<span>/head></span><br>
+                   &nbsp;<<span>body></span><br>
+                   &nbsp;<<span>/body></span><br>
+                &nbsp; <<span>/html></span>
+              </code>
+              </div>
+
+              <p>Il est possible de comprendre le document HTML de manière très simple, grâce à une division des blocs, selon la structure suivante:</p>
+
+              <ul>
+                <li>Définition du document (!DOCTYPE) </li>
+                <li>meta</li>
+                <li>head</li>
+                <li>body</li>
+              </ul>
+          </section>
+
+          <!-- section de définition du document la Structure de base -->
+          <section>
+            <h4> Définition du document (!DOCTYPE) </h4>
+            <p>Le doctype n'est pas une balise HTML, mais une déclaration pour le navigateur et les autres programmes qui peuvent lire votre site.</p>
+            <p><strong>ATTENTION</strong> Le doctype est OBLIGATOIRE et doit toujours être la PREMIERE LIGNE de votre document. </p>
+          </section>
+
+          <h4>META</h4>
+          <p>Les balises Meta servent à décrire le contenu de votre site aux moteurs de recherche, c’est dans ces balises que nous entrerons les mots-clés qui faciliteront la vie des utilisateurs dans la recherche du site.</p>
+          <p> Par exemple : Grâce à eux, vous pouvez également "signer" votre site pour déclarer que vous en êtes l’auteur.</p>
+
+
+          <h4>HEAD</h4>
+          <p> Contient des informations qui ne sont pas transposées de manière transparente à l'utilisateur ou lecteur du document. Ce sont des données implicites. En pratique, tout le contenu de l'en-tête est délimité dans la balise head.</p>
+
+          <h4>BODY</h4>
+          <p> C'est le document lui-même, c'est-à-dire l'information lisible par l'utilisateur / lecteur du document. C'est tout le texte que l'on souhaite présenter, ainsi que toutes les formes de médias sortants. De plus, toute présentation de saisie de
+            données (formulaires) s'applique également dans cette section du document.
+            <p> En pratique, le corps du document est délimité par la paire de balises
+              <<span> body> et
+                <</span>/<span> body</span>>.</p>
+            </section>
+        </article>
+        <!-- Fin de la Structure de base -->
+
+        <!-- Début du BEM -->
+        <article class="article__BEM">
+          <!-- section d'introduction BEM -->
+
+          <section>
+            <h3 class="titre__html"> BEM </h3>
+            <p> <strong> BEM </strong> est l'acronyme de Modificateur d'élément de bloc (Block Element Modifier ) qui consiste en un modèle qui permet de nommer des classes d'éléments HTML.</p>
+            <p>Cette méthode nous aide à travailler de manière plus efficace, plus rapide et plus claire, en soutenant tous ceux qui sont impliqués dans le projet en question et ceux qui peuvent venir s'intégrer ou simplement «aider» dans le processus. </p>
+            <h4>Blocs</h4>
+            <p> L'un des principes de la Méthodologie BEM recommande l'indépendance des blocs afin de faciliter la maintenance, car il se peut qu'à l'avenir vous deviez déplacer, ajouter ou supprimer des blocs. L'indépendance des blocs facilitera certainement
+              ces tâches. En bref, nous nommons la classe d'un bloc avec un nom qui l'identifie. Par exemple :</p>
+            </p>
+
+            <div class="article__code">
+              <h5 class="titre__html">HTML</h5>
+              <code><span><<span>div class="block"><<span>/</span>div></code>
+
+              <h5 class="titre__CSS">CSS</h5>
+              <code>.block { }</code>
+            </div>
+          </section>
+
+          <!-- section des elements BEM -->
+          <section>
+            <h4>Éléments</h4>
+            <p> Un élément est une sorte de "pièce" du bloc, un menu est un élément d'un Bloc header. La méthodologie BEM suggère que les classes de noms soient formées de sorte que le nom du bloc vienne en premier, juste après le nom de l'élément et qu'ils
+              soient séparés par deux traits de soulignement (__).</p>
+
+            <div class="article__code">
+              <h5 class="titre__html">HTML</h5>
+              <code><span><</span>div class="block__element"><<span>/</span>div></code>
+              <h5 class="titre__CSS">CSS</h5>
+              <code>.block__element { }</code>
+            </div>
+            <p> <strong> Notez les autres exemples suivants: </strong></p>
+            <div class="article__code">
+              <h5 class="titre__CSS">CSS</h5>
+              <code>
+                .header__logo { } <br>
+                .header__slogan { }<br>
+                .header__searchbar { }<br>
+                .header__menu { }
+              </code>
+            </div>
+          </section>
+
+          <!-- section des modificateurs BEM -->
+
+          <section>
+            <h4>Modificateurs</h4>
+            <p>Nous utilisons les modificateurs pour changer les styles d'un élément spécifique.</p>
+            <p>La méthodologie BEM recommande que si un modificateur doit être créé, il doit être écrit en syntaxe en utilisant deux traits d'union (-) après le nom de l'élément ou du bloc à modifier.</p>
+            <div class="article__code">
+              <h5 class="titre__CSS">CSS</h5>
+              <code>
+               .header__navigation { } <br>
+              .header__navigation--secondary { }
+              </code>
+
+            </div>
+            <p>"L'un des avantages de la méthodologie BEM est l'utilisation d'une seule classe par élément dans le code"</p>
+          </section>
+        </article>
+
+        <!-- Fin du BEM -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
